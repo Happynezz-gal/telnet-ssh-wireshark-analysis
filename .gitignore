@@ -1,0 +1,35 @@
+# Packet captures can contain credentials and sensitive traffic
+*.pcap
+*.pcapng
+*.cap
+
+# Credentials, secrets, and key material
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+known_hosts
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python / editor / OS noise
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+
+# Keep evidence folder structure, but not raw captures
+!evidence/
+!evidence/**/
+!evidence/**/.gitkeep
